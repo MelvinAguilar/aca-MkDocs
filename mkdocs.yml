@@ -25,9 +25,9 @@ nav:
 
 markdown_extensions:
   - admonition 
-  - pymdownx.tabbed  #
+  - pymdownx.tabbed  # Activar las pestañas (solo aparece una vez)
   - toc: 
-      permalink: true
+      permalink: true  # Tabla de contenido automática
   - pymdownx.inlinehilite 
   - pymdownx.snippets
   - pymdownx.details 
