@@ -1,0 +1,41 @@
+site_name: Jardinería Sostenible
+theme:
+  name: material
+  language: es  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green 
+      accent: blue 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/logo.png 
+  favicon: img/favicon.png  
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Guide: guide.md
+  - Plants: plants.md
+
+markdown_extensions:
+  - admonition 
+  - pymdownx.tabbed  #
+  - toc: 
+      permalink: true
+  - pymdownx.inlinehilite 
+  - pymdownx.snippets
+  - pymdownx.details 
+  - pymdownx.superfences 
+
+plugins:
+  - search 
+  - git-revision-date-localized:
+      fallback_to_build_date: false
+      locale: es
+      type: date
